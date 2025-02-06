@@ -29,5 +29,6 @@ A modern and responsive news application built with **React** and **Tailwind CSS
 ## 🛠️ Installation
 
 1. **Clone the repository**:
-   ```bash
    git clone https://github.com/your-username/news-app.git
+
+
