@@ -25,7 +25,7 @@ A modern news application that fetches real-time news articles using the **News 
 1️⃣ **Clone the Repository**
 ```bash
 git clone https://github.com/yourusername/news-app.git
-```bash
+```
 
 2️⃣ Navigate to the Project Folder
 cd news-app
