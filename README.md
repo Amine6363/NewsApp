@@ -41,12 +41,14 @@ REACT_APP_NEWS_API_KEY=your_api_key_here
 5️⃣ Run the Project
 npm start
 
-📸 Screenshots
+## 📸 Screenshots
+
 | ![General News](docs/general.png) | ![Health Category](docs/health.png) |
 |-----------------------------------|----------------------------------|
 
 | ![Technology Category](docs/technology.png) | ![Sports Category](docs/sports.png) |
 |--------------------------------------------|-----------------------------------|
+
 
 
 ⚡ Future Improvements
