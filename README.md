@@ -1,7 +1,7 @@
 # 📰 News App
 
 ## 📌 Overview
-A modern news application that fetches real-time news articles using the **News API**. Users can browse top headlines, filter news by category, and search for specific topics.
+A modern news application that fetches real-time news articles using the **News API**. Users can browse top headlines and filter news by category.
 
 ## 🚀 Features
 - 🗞 **Top Headlines**: Displays trending news worldwide.  
@@ -14,8 +14,6 @@ A modern news application that fetches real-time news articles using the **News 
 
 ### **API & Data Handling**
 - 🌍 **News API** (Fetches real-time news articles)
-- 🔄 **Axios** (For API requests)
-
 
 
 ## 🔧 Installation & Setup
