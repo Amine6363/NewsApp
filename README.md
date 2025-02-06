@@ -23,6 +23,7 @@ A modern news application that fetches real-time news articles using the **News 
 ## 🔧 Installation & Setup
 
 1️⃣ **Clone the Repository**
+```bash
 git clone https://github.com/yourusername/news-app.git
 
 2️⃣ Navigate to the Project Folder
