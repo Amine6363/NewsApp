@@ -42,8 +42,11 @@ REACT_APP_NEWS_API_KEY=your_api_key_here
 npm start
 
 📸 Screenshots
-General News	Health Category
-Technology Category	Sports Category
+| ![General News](docs/general.png) | ![Health Category](docs/health.png) |
+|-----------------------------------|----------------------------------|
+
+| ![Technology Category](docs/technology.png) | ![Sports Category](docs/sports.png) |
+|--------------------------------------------|-----------------------------------|
 
 
 ⚡ Future Improvements
