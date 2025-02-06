@@ -23,10 +23,6 @@ A modern and responsive news application built with **React** and **Tailwind CSS
 |------------|--------|----------|
 | ![Technology](docs/technology.png) | ![Sports](docs/sports.png) | ![Business](docs/business.png) |
 
-### 🔍 Search (Optional)
-| Search Results |
-|----------------|
-| ![Search](docs/search.png) |
 
 ---
 
