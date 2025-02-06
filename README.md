@@ -6,7 +6,6 @@ A modern news application that fetches real-time news articles using the **News 
 ## 🚀 Features
 - 🗞 **Top Headlines**: Displays trending news worldwide.  
 - 📂 **Category Filtering**: View news by categories (General, Health, Technology, Sports, etc.).  
-- 📱 **Responsive Design**: Works seamlessly on desktop and mobile.  
 
 ## 🛠️ Technologies Used
 ### **Frontend**
@@ -17,8 +16,7 @@ A modern news application that fetches real-time news articles using the **News 
 - 🌍 **News API** (Fetches real-time news articles)
 - 🔄 **Axios** (For API requests)
 
-### **Deployment**
-- 🌐 **Vercel** (Live hosting for the frontend)
+
 
 ## 🔧 Installation & Setup
 
@@ -28,18 +26,24 @@ git clone https://github.com/yourusername/news-app.git
 ```
 
 2️⃣ Navigate to the Project Folder
+```bash
 cd news-app
+```
 
 3️⃣ Install Dependencies
+```bash
 npm install
+```
 
 4️⃣ Set Up API Key
 Get a free API key from News API.
 Create a .env file in the root directory and add:
+```bash
 REACT_APP_NEWS_API_KEY=your_api_key_here
+```
 
 5️⃣ Run the Project
-npm start
+npm run dev
 
 ## 📸 Screenshots
 
