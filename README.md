@@ -43,12 +43,21 @@ npm start
 
 ## 📸 Screenshots
 
-| ![General News](docs/general.png) | ![Health Category](docs/health.png) |
-|-----------------------------------|----------------------------------|
+### 📰 General News  
+| ![General News](docs/general.png) |
+|-----------------------------------|
 
-| ![Technology Category](docs/technology.png) | ![Sports Category](docs/sports.png) |
-|--------------------------------------------|-----------------------------------|
+### 🏥 Health Category  
+| ![Health Category](docs/health.png) |
+|----------------------------------|
 
+### 🔬 Technology Category  
+| ![Technology Category](docs/technology.png) |
+|--------------------------------------------|
+
+### ⚽ Sports Category  
+| ![Sports Category](docs/sports.png) |
+|-----------------------------------|
 
 
 ⚡ Future Improvements
