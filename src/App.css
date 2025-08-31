@@ -1,0 +1,95 @@
+/* ---- Custom theme (harmonious blue-green) ---- */
+:root {
+  --bg-900: #0f172a; /* deep slate */
+  --bg-800: #1f2937; /* navbar */
+  --text-100: #e5e7eb; /* light text */
+  --muted-300: #9ca3af; /* muted text */
+  --accent: #10b981; /* emerald */
+  --accent-700: #0ea371; /* darker emerald */
+  --chip: #ef4444; /* news badge red */
+  --card: #111827; /* card bg */
+}
+
+body {
+  background: var(--bg-900);
+  color: var(--text-100);
+}
+
+/* Navbar look */
+.navbar,
+.navbar-dark,
+.bg-dark {
+  background: var(--bg-800) !important;
+}
+.navbar .navbar-brand {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.navbar .nav-link {
+  color: var(--text-100) !important;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.12s ease;
+  cursor: pointer; /* <= makes the finger cursor */
+}
+.navbar .nav-link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+.navbar .nav-link.active {
+  color: var(--accent) !important;
+  border-bottom: 2px solid var(--accent);
+}
+
+/* Section title chip */
+.badge.bg-danger {
+  background: var(--chip) !important;
+}
+
+/* Cards */
+.card {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+.card-title {
+  color: var(--text-100);
+}
+.card-text {
+  color: var(--muted-300);
+}
+
+/* Card image stays neat */
+.card-img-top {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* Buttons take the accent color */
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #031a10;
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background: var(--accent-700);
+  border-color: var(--accent-700);
+}
+
+/* Spacing helpers */
+.container-narrow {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Small tweaks for mobile */
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+  .navbar .navbar-brand {
+    font-size: 1.25rem;
+  }
+}
