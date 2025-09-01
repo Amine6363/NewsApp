@@ -1,0 +1,71 @@
+/* glassy, sticky, subtle border */
+.nav-elevated {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  backdrop-filter: blur(8px) saturate(140%);
+  background-color: rgba(12, 15, 23, 0.85) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* wordmark (text-only logo) */
+.brand-wordmark {
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  display: inline-flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+.brand-pill {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 0.6rem;
+  background: #ffffff;
+  color: #0f172a;
+}
+.brand-accent {
+  background: #22c55e; /* accent color */
+  color: #0b1220;
+}
+
+/* links with animated underline */
+.nav-underline .nav-link {
+  color: #a3a3a3;
+  position: relative;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+}
+.nav-underline .nav-link:hover,
+.nav-underline .nav-link.active {
+  color: #ffffff;
+}
+
+.nav-underline .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0.35rem;
+  height: 2px;
+  border-radius: 2px;
+  background: #22c55e;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.18s ease;
+}
+.nav-underline .nav-link:hover::after,
+.nav-underline .nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* tighter spacing on mobile */
+@media (max-width: 991.98px) {
+  .nav-underline .nav-link {
+    padding: 0.5rem 0;
+  }
+  .nav-underline .nav-link::after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
