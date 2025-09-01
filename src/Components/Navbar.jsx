@@ -1,33 +1,58 @@
-const navBar = ({ setCategory }) => {
+import React from "react";
+import "./NavBar.css";
+
+const CATEGORIES = [
+  { key: "technology", label: "Technology" },
+  { key: "business", label: "Business" },
+  { key: "health", label: "Health" },
+  { key: "sports", label: "Sports" },
+  { key: "entertainment", label: "Entertainment" },
+];
+
+export default function NavBar({ setCategory, activeCategory }) {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#"><span className="badge bg-light text-dark fs-4">NewsMag</span></a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+    <nav className="navbar navbar-expand-lg nav-elevated" data-bs-theme="dark">
+      <div className="container">
+        {/* text logo */}
+        <a
+          href="/"
+          className="navbar-brand brand-wordmark"
+          onClick={(e) => e.preventDefault()}
+        >
+          <span className="brand-pill">News</span>
+          <span className="brand-pill brand-accent">Mag</span>
+        </a>
+
+        <button
+          className="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon" />
         </button>
+
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("technology")} >Technology</div>
-            </li>
-            <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("business")} >Business</div>
-            </li>
-            <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("health")} >Health</div>
-            </li>
-            <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("sports")} >Sports</div>
-            </li>
-            <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("entertainment")} >Entertainment</div>
-            </li>
+          <ul className="navbar-nav ms-auto nav-underline">
+            {CATEGORIES.map(({ key, label }) => (
+              <li className="nav-item" key={key}>
+                <button
+                  type="button"
+                  className={`nav-link px-3 ${
+                    activeCategory === key ? "active" : ""
+                  }`}
+                  onClick={() => setCategory?.(key)}
+                >
+                  {label}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
     </nav>
-  )
+  );
 }
-
-export default navBar
